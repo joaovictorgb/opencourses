@@ -10,7 +10,7 @@ export default function Navbar() {
         <div class="flex items-center space-x-4">
           <h1 class="text-2xl font-bold text-green-600">OpenCourses</h1>
           <div class="hidden md:flex space-x-4">
-            <a href="/" class="hover:text-green-600 transition">Home</a>
+            <a href="/UserProfile" class="hover:text-green-600 transition">Home</a>
             <a href="/courses" class="hover:text-green-600 transition">Courses</a>
             <a href="/about" class="hover:text-green-600 transition">About</a>
             <a href="/contact" class="hover:text-green-600 transition">Contact</a>
@@ -41,7 +41,7 @@ export default function Navbar() {
             </button>
           </div>
           <div class="hidden md:flex space-x-4">
-            <a href="/login" class="px-4 py-2 bg-green-600 text-white rounded-full hover:bg-green-700 transition">Login</a>
+            <a href="/UserProfile" class="px-4 py-2 bg-green-600 text-white rounded-full hover:bg-green-700 transition">Login</a>
             <a href="/signup" class="px-4 py-2 bg-white text-green-600 border border-green-600 rounded-full hover:bg-gray-100 transition">Sign Up</a>
           </div>
           <button

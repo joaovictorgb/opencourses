@@ -11,16 +11,23 @@ import * as $greet_name_ from "./routes/greet/[name].tsx";
 import * as $index from "./routes/index.tsx";
 import * as $login from "./routes/login.tsx";
 import * as $resetpassword from "./routes/resetpassword.tsx";
+import * as $CourseContent from "./islands/CourseContent.tsx";
+import * as $CourseOverview from "./islands/CourseOverview.tsx";
+import * as $DiscussionForum from "./islands/DiscussionForum.tsx";
 import * as $FeaturedCourse from "./islands/FeaturedCourse.tsx";
 import * as $Footer from "./islands/Footer.tsx";
 import * as $HeroSection from "./islands/HeroSection.tsx";
+import * as $InstructorInfo from "./islands/InstructorInfo.tsx";
 import * as $Instructors from "./islands/Instructors.tsx";
 import * as $Navbar from "./islands/Navbar.tsx";
 import * as $PopularCourses from "./islands/PopularCourses.tsx";
+import * as $Resources from "./islands/Resources.tsx";
 import * as $Sidebar from "./islands/Sidebar.tsx";
 import * as $StudentReviews from "./islands/StudentReviews.tsx";
 import * as $Testimonials from "./islands/Testimonials.tsx";
 import * as $UniversityInfoproducerSection from "./islands/UniversityInfoproducerSection.tsx";
+import * as $VideoPlayer from "./islands/VideoPlayer.tsx";
+import * as $types from "./islands/types.ts";
 import { type Manifest } from "$fresh/server.ts";
 
 const manifest = {
@@ -36,17 +43,24 @@ const manifest = {
     "./routes/resetpassword.tsx": $resetpassword,
   },
   islands: {
+    "./islands/CourseContent.tsx": $CourseContent,
+    "./islands/CourseOverview.tsx": $CourseOverview,
+    "./islands/DiscussionForum.tsx": $DiscussionForum,
     "./islands/FeaturedCourse.tsx": $FeaturedCourse,
     "./islands/Footer.tsx": $Footer,
     "./islands/HeroSection.tsx": $HeroSection,
+    "./islands/InstructorInfo.tsx": $InstructorInfo,
     "./islands/Instructors.tsx": $Instructors,
     "./islands/Navbar.tsx": $Navbar,
     "./islands/PopularCourses.tsx": $PopularCourses,
+    "./islands/Resources.tsx": $Resources,
     "./islands/Sidebar.tsx": $Sidebar,
     "./islands/StudentReviews.tsx": $StudentReviews,
     "./islands/Testimonials.tsx": $Testimonials,
     "./islands/UniversityInfoproducerSection.tsx":
       $UniversityInfoproducerSection,
+    "./islands/VideoPlayer.tsx": $VideoPlayer,
+    "./islands/types.ts": $types,
   },
   baseUrl: import.meta.url,
 } satisfies Manifest;
