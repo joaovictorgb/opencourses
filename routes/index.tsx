@@ -1,27 +1,23 @@
-// pages/index.tsx (ou pages/home.tsx se for o caso)
-import { h } from "preact";
-import { useSignal } from "@preact/signals";
-import Counter from "../islands/Counter.tsx";
 
-export default function Home() {
-  const count = useSignal(3);
+import { Head } from "$fresh/runtime.ts";
+import Navbar from "../islands/Navbar.tsx";
+import FeaturedCourse from "../islands/FeaturedCourse.tsx";
+import PopularCourses from "../islands/PopularCourses.tsx";
+
+export default function InitialPageCourse() {
   return (
-    <div class="px-4 py-8 mx-auto bg-[#86efac]">
-      <div class="max-w-screen-md mx-auto flex flex-col items-center justify-center">
-        <img
-          class="my-6"
-          src="/logo.svg"
-          width="128"
-          height="128"
-          alt="the Fresh logo: a sliced lemon dripping with juice"
-        />
-        <h1 class="text-4xl font-bold">Welcome to Fressh</h1>
-        <p class="my-4">
-          Try updating this message in the
-          <code class="mx-2">./routes/index.tsx</code> file, and refresh.
-        </p>
-        <Counter count={count} />
+    <>
+      <Head>
+        <title>Curso Online</title>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+      </Head>
+      <div class="bg-gray-50 min-h-screen text-gray-800 font-sans">
+        <Navbar />
+        <div class="pt-20 p-4 mx-auto max-w-screen-lg">
+          <FeaturedCourse />
+          <PopularCourses />
+        </div>
       </div>
-    </div>
+    </>
   );
 }

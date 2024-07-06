@@ -9,10 +9,13 @@ import * as $api_joke from "./routes/api/joke.ts";
 import * as $greet_name_ from "./routes/greet/[name].tsx";
 import * as $home from "./routes/home.tsx";
 import * as $index from "./routes/index.tsx";
-import * as $initialpagecourse from "./routes/initialpagecourse.tsx";
 import * as $login from "./routes/login.tsx";
 import * as $resetpassword from "./routes/resetpassword.tsx";
 import * as $Counter from "./islands/Counter.tsx";
+import * as $FeaturedCourse from "./islands/FeaturedCourse.tsx";
+import * as $Navbar from "./islands/Navbar.tsx";
+import * as $PopularCourses from "./islands/PopularCourses.tsx";
+import * as $Sidebar from "./islands/Sidebar.tsx";
 import { type Manifest } from "$fresh/server.ts";
 
 const manifest = {
@@ -24,12 +27,15 @@ const manifest = {
     "./routes/greet/[name].tsx": $greet_name_,
     "./routes/home.tsx": $home,
     "./routes/index.tsx": $index,
-    "./routes/initialpagecourse.tsx": $initialpagecourse,
     "./routes/login.tsx": $login,
     "./routes/resetpassword.tsx": $resetpassword,
   },
   islands: {
     "./islands/Counter.tsx": $Counter,
+    "./islands/FeaturedCourse.tsx": $FeaturedCourse,
+    "./islands/Navbar.tsx": $Navbar,
+    "./islands/PopularCourses.tsx": $PopularCourses,
+    "./islands/Sidebar.tsx": $Sidebar,
   },
   baseUrl: import.meta.url,
 } satisfies Manifest;
