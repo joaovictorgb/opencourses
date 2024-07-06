@@ -5,8 +5,8 @@ export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav class="bg-white shadow-md fixed w-full z-10 top-0">
-      <div class="max-w-screen-lg mx-auto flex justify-between items-center p-4">
+    <nav class="bg-white shadow-md fixed w-full z-10 top-0 h-16">
+      <div class="max-w-screen-lg mx-auto flex justify-between items-center p-4 h-full">
         <div class="flex items-center space-x-4">
           <h1 class="text-2xl font-bold text-green-600">OpenCourses</h1>
           <div class="hidden md:flex space-x-4">
