@@ -1,3 +1,5 @@
+// pages/index.tsx (ou pages/home.tsx se for o caso)
+import { h } from "preact";
 import { useSignal } from "@preact/signals";
 import Counter from "../islands/Counter.tsx";
 
@@ -13,7 +15,7 @@ export default function Home() {
           height="128"
           alt="the Fresh logo: a sliced lemon dripping with juice"
         />
-        <h1 class="text-4xl font-bold">Welcome to Fresh</h1>
+        <h1 class="text-4xl font-bold">Welcome to Fressh</h1>
         <p class="my-4">
           Try updating this message in the
           <code class="mx-2">./routes/index.tsx</code> file, and refresh.
